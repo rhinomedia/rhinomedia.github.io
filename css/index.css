@@ -1,0 +1,287 @@
+@font-face {
+    font-family: cuyuanti;
+    src:url('../font/cuyuanti.TTF');
+}
+@font-face {
+    font-family: xiyuanti;
+    src:url('../font/xi.TTF');
+}
+@font-face {
+    font-family: jackey;
+    src:url('../font/Jackey_HandWrite.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width:100%;
+    height:100%;
+    min-width:980px;
+}
+footer ul, .wrap_partner ul {
+    list-style: none;
+}
+li {
+    font-family: xiyuanti;
+}
+header {
+    position: fixed;
+    min-width: 1400px;
+    width: 100%;
+    height: 40px;
+}
+header .bg {
+    height: 40px;
+    background-color: black;
+    filter:alpha(opacity=30);
+    -moz-opacity: .3;
+    -khtml-opacity: .3;
+    opacity: .3;
+}
+header .logo{
+    position: absolute;
+    top: 0;
+}
+header .logo img{
+    margin: 10px 0 0 30px;
+    height: 20px;
+}
+header .nav{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 100;
+}
+header .nav ul li{
+    list-style: none;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    margin: 0 20px 0 0;
+    color: white;
+    cursor: pointer;
+}
+header .nav ul li:hover{
+    background-color: black;
+}
+.wrap_title {
+    height: 527px;
+}
+.wrap_title img{
+    min-width: 1571px;
+    width: 100%;
+    margin-top: -40px;
+    height: 527px;
+    border: none;
+}
+.wrap_title .content{
+    width: 850px;
+    display: block;
+    margin: -325px auto;
+    text-align: center;
+}
+.wrap_title .content p {
+    font-weight: bold;
+    color: #fff;
+    font-size: 25px;
+}
+.wrap_title .content h1 {
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 60px;
+}
+.wrap_title .content h1{
+    font-family: xiyuanti;
+    color: white;
+}
+.wrap_title .content h2 {
+    margin-top: 20px;
+    font-family: jackey;
+    color: #e67824;
+    font-size: 60px;
+}
+.wrap_product,.wrap_market,.wrap_partner ,.wrap_market .container{
+    width: 1400px;
+    margin: 0 auto;
+}
+.wrap_product .product_title,.wrap_partner .partner_title ,.wrap_market .market_title{
+    text-align: center;
+    font-size: 20px;
+    color: #9b9b9b;
+}
+.wrap_product .product_title span,.wrap_market .market_title span, .wrap_partner .partner_title span{
+    padding: 5px;
+    border-bottom: 2px solid #d8d8d8;
+}
+.wrap_product .product_content, .wrap_market .market_content,.wrap_partner .content{
+    margin: 0 auto;
+}
+.wrap_product .product_content .product_item,.wrap_market .market_content .product_item{
+    text-align: center;
+    display: inline-table;
+    margin-top: 50px;
+    margin-right: 85px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 350px;
+}
+.wrap_product .product_content .product_item .title,.wrap_market .market_content .product_item .title{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.wrap_product .product_content .product_item .s_title{
+    font-family: xiyuanti;
+    margin-top: 10px;
+}
+.wrap_product .product_content .product_item.last,.wrap_market .market_content .product_item.last {
+    margin-right: 0;
+}
+.wrap_product .product_content .product_item .describe,.wrap_market .market_content .product_item .describe {
+    width: 350px;
+    text-align: left;
+    margin-left: 55px;
+}
+.wrap_product .product_content .product_item img{
+    width: 150px;
+    height: 150px;
+}
+.wrap_market .market_content .product_item img {
+    max-width: 210px;
+    max-height: 250px;
+}
+
+.wrap_product .product_content .product_item ul, .wrap_market .market_content .product_item ul{
+    color: #9b9b9b;
+    padding-top: 30px;
+    font-size: 14px;
+    margin-left: 60px;
+}
+.wrap_product .product_content .product_item ul li, .wrap_market .market_content .product_item ul li{
+    margin-top: 10px;
+}
+.wrap_market{
+    width: 100%;
+    background-color: #F5FFFA;
+    padding-top: 20px;
+}
+.wrap_partner {
+    margin-top: 20px;
+    height: 400px;
+}
+.wrap_partner .content {
+    margin: 20px auto 0;
+    height: 120px;
+    width: 1000px;
+}
+.wrap_partner .content ul li {
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin-right: 60px;
+}
+.wrap_partner .content ul li div {
+    width: 150px;
+    height: 120px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.wrap_partner .content ul li:last-child {
+    margin-right: 0;
+}
+.wrap_partner .content ul {
+    display: table;
+}
+.wrap_partner img {
+    max-width: 150px;
+}
+.clear {
+    clear: both;
+    display: block;
+    content: "";
+    visibility: hidden;
+}
+footer {
+    width: 100%;
+    background-color: #333333;
+}
+footer .foot {
+    width: 1400px;
+    height: 230px;
+    margin: 0 auto;
+}
+footer .foot .img{
+    float: left;
+    height: 230px;
+    width: 300px;
+    border-right: 1px dashed #8d8d8d;
+}
+footer .foot .contact {
+    float: left;
+    height: 230px;
+    width: 700px;
+    border-right: 1px dashed #8d8d8d;
+}
+footer .foot .follow{
+    float: left;
+    height: 230px;
+    width: 350px;
+}
+footer .foot .img img {
+    max-width: 150px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+footer .foot .contact img {
+    width: 30px;
+    height: 30px;
+}
+footer .foot .follow img{
+    margin-top: 10px;
+    width: 80px;
+}
+footer .foot .follow .wechat img ,footer .foot .follow .sina img{
+    width: 50px;
+    height: 50px;
+}
+footer .foot .contact .title {
+    color: #d8d8d8;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+footer .foot .follow .title {
+    color: #d8d8d8;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 116px;
+}
+footer .foot .contact li span  {
+    color: #d8d8d8;
+    font-size: 16px;
+    vertical-align: super;
+}
+footer .foot .contact li {
+    width: 375px;
+    text-align: left;
+}
+footer .foot .follow ul li{
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+}
+footer .address {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    background-color: black;
+    color: #f5f5f5;
+    line-height: 30px;
+    text-align: center;
+}
