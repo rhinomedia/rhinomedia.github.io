@@ -1,6 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, PingFang SC, 'Microsoft Yahei', '微软雅黑', SimHei, Helvetica, Simsun, '宋体';
+}
+.cover {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  filter: alpha(opacity=30);
+  -moz-opacity: .3;
+  -khtml-opacity: .3;
+  z-index: 100;
+  opacity: .3;
 }
 .head {
   position: fixed;
@@ -57,6 +70,13 @@
 .swiper-container .swiper-slide {
   position: relative;
   overflow: hidden;
+}
+.swiper-container .title {
+  margin: 304px auto;
+  text-align: center;
+  font-size: 36px;
+  width: 600px;
+  color: #ffffff;
 }
 .swiper-container .nth1 {
   background: url("../image/colorRun.jpg") 50% center;
