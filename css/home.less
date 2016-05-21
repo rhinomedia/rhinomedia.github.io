@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.head {
+  position: fixed;
+  width: 100%;
+  min-width: 1440px;
+  height: 40px;
+  z-index: 2;
+  .bg {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    filter: alpha(opacity=30);
+    -moz-opacity: .3;
+    -khtml-opacity: .3;
+    z-index: 100;
+    opacity: .3;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 196px;
+    height: 40px;
+    z-index: 101;
+    background: url("../image/1.png") no-repeat center;
+    background-size: contain;
+  }
+  .navBar {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 101;
+    ul {
+      li {
+        font-size: 16px;
+        list-style: none;
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        float: left;
+        margin: 0 20px 0 0;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 1200px;
+  .swiper-slide {
+    position: relative;
+    overflow: hidden;
+  }
+  .nth1 {
+    background: url("../image/colorRun.jpg") 50% center;
+    background-size: cover;
+  }
+  .nth2 {
+    background: url("../image/floor.jpg") 50% center;
+    background-size: cover;
+  }
+  .nth3 {
+    background: url("../image/floor2.jpg") 50% center;
+    background-size: cover;
+  }
+  .nth4 {
+    background: url("../image/light.jpg") 50% center;
+    background-size: cover;
+  }
+  .nth5 {
+    background: url("../image/pen.jpg") 50% center;
+    background-size: cover;
+  }
+  .nth6 {
+    background: url("../image/phone.jpg") 50% center;
+    background-size: cover;
+  }
+  .self .swiper-pagination-bullet {
+    display: inline-block;
+    margin: 0 5px;
+    width: 40px;
+    height: 3px;
+    font-size: 3px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 0;
+    opacity: 1;
+  }
+  .self .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #00dfb9;
+  }
+}

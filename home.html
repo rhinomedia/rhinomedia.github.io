@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>犀牛传媒-专注高校互动媒体</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="高校传媒，大学推广，广告投放，大学市场" />
+    <link href="/image/logo.ico" rel="icon" type="image/x-icon">
+    <link href="http://api.youziku.com/webfont/CSS/573ed1dcf629d80a0ced5f7e" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/home.css"/>
+</head>
+<body>
+<div class="head">
+    <div class="bg"></div>
+    <div class="logo"></div>
+    <div class="navBar">
+        <ul>
+            <a href="#"><li><span>首页</span></li></a>
+            <a href="#product"><li><span>我们的产品</span></li></a>
+            <a href="#market"><li><span>我们的市场</span></li></a>
+            <a href="#partner"><li><span>合作伙伴</span></li></a>
+            <a href="#contact"><li><span>联系我们</span></li></a>
+        </ul>
+    </div>
+</div>
+<div class="wrap">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide nth1"></div>
+            <div class="swiper-slide nth2"></div>
+            <div class="swiper-slide nth3"></div>
+            <div class="swiper-slide nth4"></div>
+            <div class="swiper-slide nth5"></div>
+            <div class="swiper-slide nth6"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination self"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <!--<div class="swiper-button-prev"></div>-->
+        <!--<div class="swiper-button-next"></div>-->
+
+        <!-- 如果需要滚动条 -->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/swiper-3.3.1.jquery.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-67442921-1', 'auto');
+    ga('send', 'pageview');
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        autoplay : 5000,
+        autoplayDisableOnInteraction : false,
+        loop: true,
+        pagination : '.swiper-pagination',
+        paginationClickable :true,
+    })
+    $('.swiper-container').css('height',$(window).height());
+    $(window).resize(function(){
+        $('.swiper-container').css('height',$(window).height());
+    });
+</script>
+</body>
+</html>
