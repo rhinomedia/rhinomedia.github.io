@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, PingFang SC, 'Microsoft Yahei', '微软雅黑', SimHei, Helvetica, Simsun, '宋体';
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', sans-serif;
 }
 ul {
   list-style: none;
@@ -73,6 +73,34 @@ ul {
 .swiper-container .swiper-slide {
   position: relative;
   overflow: hidden;
+}
+.swiper-container .btn {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  z-index: 101;
+}
+.swiper-container .btn a {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-weight: 400;
+  color: white;
+  padding: 8px 15px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.swiper-container .btn a:hover {
+  background-color: white;
+  color: #03A9F4;
+}
+.swiper-container .btn a.blue {
+  background-color: #03A9F4;
+  border: 1px solid #03A9F4;
+}
+.swiper-container .btn a.blue:hover {
+  color: #fff;
 }
 .swiper-container .title {
   position: absolute;
