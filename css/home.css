@@ -3,9 +3,6 @@
   padding: 0;
   font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', sans-serif;
 }
-ul {
-  list-style: none;
-}
 .cover {
   position: fixed;
   width: 100%;
@@ -239,6 +236,7 @@ ul {
   width: 1000px;
 }
 .wrap_partner .content ul li {
+  list-style: none;
   float: left;
   width: 150px;
   height: 120px;
