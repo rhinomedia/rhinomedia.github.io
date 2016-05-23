@@ -20,7 +20,7 @@
   width: 100%;
   min-width: 1440px;
   height: 40px;
-  z-index: 2;
+  z-index: 101;
 }
 .head .bg {
   width: 100%;
@@ -72,10 +72,12 @@
   overflow: hidden;
 }
 .swiper-container .title {
-  margin: 304px auto;
-  text-align: center;
-  font-size: 36px;
-  width: 600px;
+  position: absolute;
+  top: 304px;
+  font-size: 44px;
+  width: 1000px;
+  z-index: 101;
+  left: 100px;
   color: #ffffff;
 }
 .swiper-container .nth1 {
@@ -106,7 +108,7 @@
   display: inline-block;
   margin: 0 5px;
   width: 40px;
-  height: 3px;
+  height: 5px;
   font-size: 3px;
   background: #fff;
   cursor: pointer;
