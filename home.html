@@ -32,8 +32,8 @@
                 </div>
                 <div class="cover"></div>
                 <div class="btn">
-                    <a class="blue" href="">这里是超链接</a>
-                    <a href="">这里是超链接</a>
+                    <a class="blue" href="" data-url="./image/colorRun.jpg">这里是超链接</a>
+                    <a href="" data-url="./image/colorRun.jpg">这里是超链接</a>
                 </div>
             </div>
             <div class="swiper-slide nth3">
@@ -297,6 +297,11 @@
         </div>
     </footer>
 </div>
+<div class="modal-cover"></div>
+<div class="modal-wrapper fade">
+    <img src="" alt="">
+    <div class="modal-close"></div>
+</div>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/swiper-3.3.1.jquery.min.js"></script>
 <script>
@@ -307,20 +312,31 @@
 
     ga('create', 'UA-67442921-1', 'auto');
     ga('send', 'pageview');
-
-    var mySwiper = new Swiper ('.swiper-container', {
-        autoplay : 5000,
-        autoplayDisableOnInteraction : false,
-        effect : 'fade',
-        loop: true,
-        pagination : '.swiper-pagination',
-        paginationClickable :true,
-    })
-    $('.swiper-container').css('height',$(window).height());
-    $('.cover').css('height',$(window).height());
-    $(window).resize(function(){
+    $(document).ready(function() {
+        var mySwiper = new Swiper ('.swiper-container', {
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            effect : 'fade',
+            loop: true,
+            pagination : '.swiper-pagination',
+            paginationClickable :true,
+        })
         $('.swiper-container').css('height',$(window).height());
         $('.cover').css('height',$(window).height());
+        $(window).resize(function(){
+            $('.swiper-container').css('height',$(window).height());
+            $('.cover').css('height',$(window).height());
+        });
+        $('.btn a').click(function(e) {
+            e.preventDefault();
+            $('.modal-cover').show();
+            $('.modal-wrapper img').attr('src',$(this).attr('data-url'));
+            $(".modal-wrapper").addClass('in');
+        });
+        $('.modal-close').click(function() {
+            $('.modal-cover').hide();
+            $(".modal-wrapper").removeClass('in');
+        })
     });
 </script>
 </body>
