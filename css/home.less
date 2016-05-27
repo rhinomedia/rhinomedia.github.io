@@ -345,7 +345,6 @@ footer .address {
 }
 .modal-wrapper {
   position: fixed;
-  z-index: 120;
   top: 190px;
   left: 50%;
   margin-left: -500px;
@@ -354,6 +353,7 @@ footer .address {
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
+  z-index: 0;
   img{
     width:100%;
   }
@@ -391,7 +391,8 @@ footer .address {
     filter: alpha(opacity=0);
   }
   &.in {
-    top: 230px;
+    z-index: 120;
+    top: 205px;
     opacity: 1;
     filter: alpha(opacity=100);
   }
