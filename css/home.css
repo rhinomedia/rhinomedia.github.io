@@ -357,9 +357,10 @@ footer .address {
 }
 .modal-wrapper {
   position: fixed;
-  top: 190px;
+  top: 50%;
   left: 50%;
   margin-left: -500px;
+  margin-top: -325px;
   width: 1000px;
   height: 570px;
   -webkit-transition: all .2s linear;
@@ -405,7 +406,7 @@ footer .address {
 }
 .modal-wrapper.in {
   z-index: 120;
-  top: 205px;
+  margin-top: -285px;
   opacity: 1;
   filter: alpha(opacity=100);
 }
